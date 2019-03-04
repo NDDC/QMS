@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EB738758-0EF4-4988-BE3C-7B94FC58F8A5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>QMS.My.MyApplication</StartupObject>
+    <RootNamespace>QMS</RootNamespace>
+    <AssemblyName>QMS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>QMS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>QMS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChangePass.designer.vb">
+      <DependentUpon>ChangePass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choose.designer.vb">
+      <DependentUpon>Choose.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Choose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateUser.designer.vb">
+      <DependentUpon>CreateUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HOME.designer.vb">
+      <DependentUpon>HOME.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HOME.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeView.designer.vb">
+      <DependentUpon>HomeView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HomeView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\QMSDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QMSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportsVisitors.Designer.vb">
+      <DependentUpon>ReportsVisitors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportsVisitors.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewUser1.designer.vb">
+      <DependentUpon>ViewUser1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewUser1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisitorsInfo.designer.vb">
+      <DependentUpon>VisitorsInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VisitorsInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ChangePass.resx">
+      <DependentUpon>ChangePass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choose.resx">
+      <DependentUpon>Choose.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateUser.resx">
+      <DependentUpon>CreateUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HOME.resx">
+      <DependentUpon>HOME.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeView.resx">
+      <DependentUpon>HomeView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportsVisitors.resx">
+      <DependentUpon>ReportsVisitors.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportV.rdlc" />
+    <EmbeddedResource Include="ViewUser1.resx">
+      <DependentUpon>ViewUser1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisitorsInfo.resx">
+      <DependentUpon>VisitorsInfo.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reports\QMSDataSet.xsc">
+      <DependentUpon>QMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\QMSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QMSDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\QMSDataSet.xss">
+      <DependentUpon>QMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\add2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ex3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invent.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invent1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconX.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icons\add2.jpg.ico" />
+    <Content Include="Icons\cart2.jpg.ico" />
+    <Content Include="Icons\change pass.jpg.ico" />
+    <Content Include="Icons\delivery.jpg.ico" />
+    <Content Include="Icons\home.jpg.ico" />
+    <Content Include="Icons\invent1.jpg.ico" />
+    <Content Include="Icons\inventory icon.jpg.ico" />
+    <Content Include="Icons\log3.jpg.ico" />
+    <Content Include="Icons\New-Customer.jpg.ico" />
+    <Content Include="Icons\reports.jpg.ico" />
+    <Content Include="Icons\request.jpg.ico" />
+    <Content Include="Icons\search1.jpg.ico" />
+    <Content Include="Icons\search3.jpg.ico" />
+    <Content Include="Icons\services.jpg.ico" />
+    <Content Include="Icons\users3.png.ico" />
+    <None Include="Resources\norteam jpeg.jpg" />
+    <None Include="Resources\ed.jpg" />
+    <None Include="Resources\change pass.jpg" />
+    <None Include="Resources\log1.png" />
+    <None Include="Resources\reports.jpg" />
+    <None Include="Resources\books.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
